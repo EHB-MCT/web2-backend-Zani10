@@ -1,0 +1,7 @@
+{
+    "baseUrl": "mongodb+srv://<username>:<password>@cluster0.80g8srd.mongodb.net/?retryWrites=true&w=majority",
+    "username": "zanidobruna",
+    "pw": "zani",
+    "db": "newsession",
+    "finalUrl": "mongodb+srv://zanidobruna:zani@cluster0.80g8srd.mongodb.net/?retryWrites=true&w=majority"
+}
