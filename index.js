@@ -9,7 +9,7 @@ require('dotenv').config();
 console.log(process.env.PORT);
 
 // Create the mongo client to use
-const client = new MongoClient(process.env.FINAL_URL)
+const client = new MongoClient(process.env.FINAL_URL);
 
 const app = express();
 const port = process.env.PORT || 8080;
