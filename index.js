@@ -2,13 +2,16 @@ const express = require('express');
 const fs = require('fs/promises')
 const bodyParser = require('body-parser');
 const { MongoClient} = require('mongodb');
-const config = require('./config.json');
+require('dotenv').config();
+
+
+console.log(process.env.PORT);
 
 // Create the mongo client to use
-const client = new MongoClient(config.finalUrl)
+const client = new MongoClient(process.env.FINALURL)
 
 const app = express();
-const port = 1337;
+const port = process.env.PORT;
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
